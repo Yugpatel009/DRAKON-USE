@@ -6,7 +6,7 @@
 > 🔐 Private when it matters  
 > 🧠 Smart where it counts  
 
-![DRAKON UI](static/img/logo.png)
+![DRAKON UI](logo.png)
 
 ---
 
