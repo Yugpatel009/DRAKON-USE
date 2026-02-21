@@ -1,104 +1,309 @@
-# DRAKON AI - Official User Manual
+<p align="center">
+  <img src="static/img/logo.png" alt="DRAKON Logo" width="80"/>
+</p>
 
-Welcome to **DRAKON AI**, your intelligent, privacy-first coding assistant! DRAKON combines the power of cloud-based AI (Groq) with completely offline, local execution using Ollama.
-
-This manual will guide you step-by-step on how to download, set up, and use the DRAKON standalone Windows executable (`.exe`), including installing the necessary engine and setting up the local AI models.
-
----
-
-## Table of Contents
-1. [Prerequisites](#1-prerequisites)
-2. [Step 1: Download & Run the DRAKON `.exe`](#2-step-1-download--run-the-drakon-exe)
-3. [Step 2: Install the Ollama Engine](#3-step-2-install-the-ollama-engine)
-4. [Step 3: Download & Set Up the Local AI Model](#4-step-3-download--set-up-the-local-ai-model)
-5. [Using DRAKON AI (Cloud vs Local)](#5-using-drakon-ai-cloud-vs-local)
-6. [Troubleshooting & FAQs](#6-troubleshooting--faqs)
+<h1 align="center">DRAKON AI — User Manual</h1>
+<p align="center"><em>Your Private, Offline-First AI Coding Assistant</em></p>
 
 ---
 
-## 1. Prerequisites
-- **Operating System:** Windows 10 or Windows 11
-- **Hardware:** A modern CPU is required. For the best local model experience, a dedicated GPU (NVIDIA with CUDA support) is highly recommended.
-- **Storage:** At least 8-10 GB of free space. The app itself is small, but local AI models (like *Hushiyar-Alpha*) require several gigabytes.
-- **Internet:** Required initially to download the application and the models. After setup, the local models can be completely used **offline**.
+## 📑 Table of Contents
+
+| # | Section |
+|---|---------|
+| 1 | [System Requirements](#1--system-requirements) |
+| 2 | [Download & Launch the App](#2--download--launch-the-app) |
+| 3 | [Install the Ollama Engine](#3--install-the-ollama-engine) |
+| 4 | [Download Your First AI Model](#4--download-your-first-ai-model) |
+| 5 | [App Interface Overview](#5--app-interface-overview) |
+| 6 | [Core Features](#6--core-features) |
+| 7 | [Managing Models](#7--managing-models) |
+| 8 | [Keyboard Shortcuts](#8--keyboard-shortcuts) |
+| 9 | [Troubleshooting](#9--troubleshooting) |
+| 10 | [Uninstallation](#10--uninstallation) |
 
 ---
 
-## 2. Step 1: Download & Run the DRAKON `.exe`
+## 1 — System Requirements
 
-DRAKON is built as a portable Windows executable for maximum performance and deep OS integration.
+| Component | Minimum | Recommended |
+|-----------|---------|-------------|
+| **OS** | Windows 10 (64-bit) | Windows 11 |
+| **CPU** | Any modern quad-core | Intel i5 / Ryzen 5 or better |
+| **RAM** | 8 GB | 16 GB or more |
+| **GPU** | Not required (CPU-only mode) | NVIDIA GPU with 6 GB+ VRAM (CUDA) |
+| **Disk Space** | 8 GB free | 15 GB+ free |
+| **Internet** | Required for initial setup only | — |
 
-1. **Download the App:** Navigate to the DRAKON download page in your browser or receive the `.exe` file distributed by the creator.
-2. **Where to Place It:** Move the `DRAKON.exe` to a dedicated folder, for example: `C:\Program Files\Drakon\` or simply run it from your `Desktop`.
-3. **Run the App:** Double-click `DRAKON.exe` to launch the application. 
-   *(Note: If Windows SmartScreen displays a "Windows protected your PC" warning, click **More info** and then click **Run anyway**, as this is a new piece of software.)*
-
----
-
-## 3. Step 2: Install the Ollama Engine
-
-While the DRAKON app handles the user interface and cloud requests, it requires **Ollama** running in the background to serve the local AI models directly on your hardware.
-
-1. **Download Ollama:** Head to the official website: [https://ollama.com/download](https://ollama.com/download)
-2. Select **Windows** and download the installer (`OllamaSetup.exe`).
-3. **Install:** Run `OllamaSetup.exe` and follow the standard installation prompts.
-4. **Verify it's running:** Look at your Windows System Tray (bottom right corner of your screen, near the clock). You should see the cute little llama icon. This means the Ollama engine is active.
+> **Note:** After you download the app and model, DRAKON works **100% offline**. Your data never leaves your machine.
 
 ---
 
-## 4. Step 3: Download & Set Up the Local AI Model
+## 2 — Download & Launch the App
 
-DRAKON supports many open-source models (Mistral, Llama 3, Gemma), but it is heavily optimized for a custom reasoning model called **Hushiyar-Alpha**. 
+### Step 1: Get the Installer
+Download `DRAKON.exe` from the official DRAKON download page or from the link provided by the team.
 
-Here is how to download and set it up:
+### Step 2: Place the File
+Move `DRAKON.exe` into a dedicated folder. Recommended locations:
+```
+C:\Program Files\Drakon\
+```
+or simply keep it on your **Desktop**.
 
-1. Open your **Command Prompt** (Press `Win + R`, type `cmd`, and hit Enter) or **PowerShell**.
-2. **Download the model** by copying and pasting the following command:
-   ```bash
-   ollama pull aryanvala/hushiyar-alpha
-   ```
-   *Wait for the download to finish. Depending on your internet speed, this might take a few minutes as the model is several gigabytes in size.*
+### Step 3: Run the App
+Double-click `DRAKON.exe` to launch.
 
-3. **Verify the installation** by running:
-   ```bash
-   ollama run aryanvala/hushiyar-alpha
-   ```
-   You can send a quick message in the terminal just to see if it responds. Once it does, type `/bye` to exit. The model is now permanently saved on your PC!
+> **Windows SmartScreen Warning:**  
+> If you see *"Windows protected your PC"*, click **More info** → **Run anyway**.  
+> This is normal for newly distributed software and is completely safe.
 
----
-
-## 5. Using DRAKON AI (Cloud vs Local)
-
-Launch `DRAKON.exe` and you'll be greeted by the chat interface. At the bottom right, you'll see a **Model Selection Menu** (click the robot icon).
-
-### Zenith (Cloud Model)
-- **What is it:** Powered by Groq LPU™ and Llama 3.3.
-- **Speed:** Blazing fast (< 300ms latency).
-- **Use Case:** Best for heavy coding tasks, intense logic, and when you have a stable internet connection.
-
-### Hushiyar-Alpha (Local Model)
-- **What is it:** The model you just downloaded locally.
-- **Speed:** Depends on your PC's hardware (GPU/RAM).
-- **Use Case:** 100% Data Privacy. Works completely offline. Best for working on proprietary codebases or when you lack an internet connection.
-
-### Features Available to You:
-- **Code Generation:** Just ask DRAKON to write a script or function in natural language.
-- **Smart Debugging:** Paste an error log, and DRAKON will explain what failed.
-- **File Uploads:** Use the `+` button next to the chat bar to attach code files, PDFs, or Image assets. Note: The cloud model has built-in vision integration.
-- **Deep Think Mode / Image Generation:** Click the `+` options menu to switch modes depending on your creative needs.
+Once launched, DRAKON will open a browser window at `http://127.0.0.1:5000` with the full chat interface.
 
 ---
 
-## 6. Troubleshooting & FAQs
+## 3 — Install the Ollama Engine
 
-**Q: DRAKON says "Ollama Not Running" in the model selector.**
-A: Make sure the Ollama app is open. Search for "Ollama" in your Windows Start Menu and click it. Ensure the llama icon is in your system tray.
+DRAKON uses **Ollama** as its local inference engine — this is the "brain" that actually runs the AI models on your hardware.
 
-**Q: The local model is replying very slowly.**
-A: Local LLMs are hardware intensive. If you do not have a dedicated GPU, Ollama will fall back to using your RAM/CPU, which is significantly slower. Be sure to close memory-heavy apps to speed it up.
+### Step 1: Download Ollama
+Go to the official download page:
 
-**Q: How do I update my local model?**
-A: Open your terminal and simply run `ollama pull aryanvala/hushiyar-alpha` again. It will automatically download the newer layers and replace the old ones.
+🔗 **[https://ollama.com/download](https://ollama.com/download)**
 
-**Q: Are my files safe?**
-A: When you use the local `Hushiyar-Alpha` model, your prompts, code files, and documents never leave your computer. They are processed entirely locally. If you use the `Zenith` cloud model, they are sent securely to the API for rapid processing.
+Click the **Windows** button and download `OllamaSetup.exe`.
+
+### Step 2: Install
+Run the installer and follow the on-screen prompts. No special configuration is needed — the defaults work perfectly.
+
+### Step 3: Verify Installation
+After installation, Ollama runs silently in the background. Look for the **llama icon** 🦙 in the Windows **System Tray** (bottom-right corner, near the clock).
+
+✅ If you see the icon → Ollama is running and ready.
+
+> **Tip:** Ollama starts automatically with Windows. You don't need to launch it manually each time.
+
+---
+
+## 4 — Download Your First AI Model
+
+DRAKON is optimized for a custom model called **Hushiyar-Alpha**, built specifically for high-quality code generation and reasoning.
+
+### Step 1: Open Terminal
+Press `Win + R`, type `cmd`, and press **Enter** (or search for **PowerShell** in the Start Menu).
+
+### Step 2: Pull the Model
+Copy and paste this command into your terminal:
+
+```bash
+ollama pull aryanvala/hushiyar-alpha
+```
+
+Wait for the download to complete. The progress bar will show the download status:
+
+```
+pulling manifest...
+pulling abc123def456... 100% ██████████████████████ 4.7 GB
+verifying sha256 digest...
+writing manifest...
+success
+```
+
+### Step 3: Verify It Works
+Test the model directly in the terminal:
+
+```bash
+ollama run aryanvala/hushiyar-alpha
+```
+
+Type a test message like `Hello!` and wait for a response. Once confirmed, type `/bye` to exit.
+
+✅ The model is now permanently saved on your PC and ready for DRAKON to use.
+
+### Optional: Other Compatible Models
+You can also download other open-source models. Some popular choices:
+
+| Command | Model | Size |
+|---------|-------|------|
+| `ollama pull llama3.1` | Meta Llama 3.1 (8B) | ~4.7 GB |
+| `ollama pull mistral` | Mistral 7B | ~4.1 GB |
+| `ollama pull codellama` | Code Llama (7B) | ~3.8 GB |
+| `ollama pull gemma2` | Google Gemma 2 | ~5.4 GB |
+| `ollama pull llava` | LLaVA (Vision Model) | ~4.5 GB |
+
+> All downloaded models will automatically appear in DRAKON's model selector.
+
+---
+
+## 5 — App Interface Overview
+
+When you launch DRAKON, you'll see the main chat interface:
+
+```
+┌─────────────────────────────────────────────────┐
+│  ☰ Sidebar    │         DRAKON AI               │
+│               │                                  │
+│  Chat History │    Welcome! How can I help you   │
+│  ─────────    │    with coding today?             │
+│  > Chat 1     │                                  │
+│  > Chat 2     │                                  │
+│  > Chat 3     │                                  │
+│               │                                  │
+│               │  ┌──────────────────────────┐    │
+│               │  │ + │ Type your message... │ ➤ │ │
+│               │  └──────────────────────────┘    │
+│               │         Model: Hushiyar-Alpha    │
+└─────────────────────────────────────────────────┘
+```
+
+| Element | Description |
+|---------|-------------|
+| **Sidebar (☰)** | View, search, and manage your chat history |
+| **Chat Area** | Main conversation window with AI responses |
+| **Input Box** | Type your message or paste code here |
+| **+ Button** | Access file uploads, Deep Think mode, and Image Generation |
+| **Model Selector** | Switch between downloaded local models (bottom-right) |
+| **Send Button (➤)** | Send your message (or press `Enter`) |
+
+---
+
+## 6 — Core Features
+
+### 💬 Chat & Code Generation
+Type any coding question or request in natural language. DRAKON will respond with structured, well-commented code.
+
+**Example prompts:**
+- *"Write a Python function to merge two sorted lists"*
+- *"Explain what this error means: IndexError: list index out of range"*
+- *"Convert this JavaScript function to TypeScript"*
+
+### 📎 File Upload & Analysis
+Click the **+** button next to the input box to attach files. Supported formats:
+
+| Type | Extensions |
+|------|-----------|
+| Documents | `.pdf`, `.docx`, `.txt` |
+| Code Files | `.py`, `.js`, `.html`, `.css`, `.java`, `.cpp`, etc. |
+| Images | `.png`, `.jpg`, `.jpeg` (requires a vision-capable model like `llava`) |
+
+DRAKON extracts the full text from your files and analyzes them intelligently. You can ask questions like:
+- *"Summarize this PDF"*
+- *"Find bugs in the attached Python file"*
+- *"What does this code do?"*
+
+### 🧠 Deep Think Mode
+Activate via the **+** menu. In this mode, DRAKON takes extra time to reason through complex problems step-by-step before giving a final answer. Best for:
+- Algorithm design
+- Architecture decisions
+- Debugging complex logic
+
+### 🎨 Image Generation
+Activate via the **+** menu. Generate images from text prompts using a local ComfyUI backend (requires separate ComfyUI installation).
+
+---
+
+## 7 — Managing Models
+
+### View Installed Models
+Open your terminal and run:
+```bash
+ollama list
+```
+This shows all downloaded models with their sizes:
+```
+NAME                          SIZE     MODIFIED
+aryanvala/hushiyar-alpha      4.7 GB   2 hours ago
+llama3.1:latest               4.7 GB   1 day ago
+```
+
+### Switch Models in DRAKON
+Click the **model name** displayed at the bottom-right of the chat interface. A dropdown will appear listing all available local models. Click any model to switch to it instantly.
+
+### Update a Model
+```bash
+ollama pull aryanvala/hushiyar-alpha
+```
+Running the same pull command again will download only the changed layers — fast and efficient.
+
+### Remove a Model
+```bash
+ollama rm aryanvala/hushiyar-alpha
+```
+
+---
+
+## 8 — Keyboard Shortcuts
+
+| Shortcut | Action |
+|----------|--------|
+| `Enter` | Send message |
+| `Shift + Enter` | New line (without sending) |
+| `Ctrl + N` | Start a new chat |
+
+---
+
+## 9 — Troubleshooting
+
+### "Ollama Not Running" in Model Selector
+**Cause:** The Ollama engine is not active.  
+**Fix:**
+1. Search for **Ollama** in your Windows Start Menu and click it.
+2. Confirm the 🦙 icon appears in the System Tray.
+3. Refresh the DRAKON page.
+
+### Model Responses Are Very Slow
+**Cause:** Running without a GPU. Ollama falls back to CPU-only inference, which is much slower.  
+**Fix:**
+- Close other memory-heavy applications (browsers, games, IDEs).
+- If you have an NVIDIA GPU, ensure the latest **NVIDIA drivers** are installed.
+- Consider using a smaller model (e.g., `mistral` at 7B instead of a 13B+ model).
+
+### DRAKON Opens But Shows a Blank Page
+**Cause:** The browser did not open automatically, or the port is blocked.  
+**Fix:**
+1. Manually open your browser and go to: `http://127.0.0.1:5000`
+2. If the port is occupied, check for other apps using port 5000.
+
+### "Model Not Found" Error When Chatting
+**Cause:** The selected model hasn't been downloaded yet.  
+**Fix:**
+```bash
+ollama pull <model-name>
+```
+Then refresh the DRAKON page and re-select the model.
+
+### Windows Firewall Blocks DRAKON
+**Cause:** Windows Firewall may block local network connections.  
+**Fix:**
+1. When prompted, click **Allow access** for both private and public networks.
+2. If you accidentally denied it, go to **Windows Security** → **Firewall** → **Allow an app through firewall** → find and enable `DRAKON.exe`.
+
+---
+
+## 10 — Uninstallation
+
+### Remove DRAKON
+Simply delete the `DRAKON.exe` file and its folder. DRAKON does not install system-wide services.
+
+### Remove Ollama
+1. Open **Settings** → **Apps** → **Installed Apps**
+2. Search for **Ollama** and click **Uninstall**
+
+### Remove Downloaded Models
+Models are stored by Ollama. To remove them before uninstalling:
+```bash
+ollama rm aryanvala/hushiyar-alpha
+ollama rm llama3.1
+```
+
+Or delete the entire model storage folder:
+```
+%USERPROFILE%\.ollama\models
+```
+
+---
+
+<p align="center">
+  <strong>Built with ❤️ by the Yug kansagara</strong><br/>
+  <em>Privacy First. Always Local. Always Yours.</em>
+</p>
