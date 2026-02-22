@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="static/img/logo.png" alt="DRAKON Logo" width="80"/>
+  <img src="drakon.png" alt="DRAKON Logo" width="80"/>
 </p>
 
 <h1 align="center">DRAKON AI — User Manual</h1>
