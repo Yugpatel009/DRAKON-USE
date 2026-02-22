@@ -278,28 +278,6 @@ Then refresh the DRAKON page and re-select the model.
 1. When prompted, click **Allow access** for both private and public networks.
 2. If you accidentally denied it, go to **Windows Security** → **Firewall** → **Allow an app through firewall** → find and enable `DRAKON.exe`.
 
----
-
-## 10 — Uninstallation
-
-### Remove DRAKON
-Simply delete the `DRAKON.exe` file and its folder. DRAKON does not install system-wide services.
-
-### Remove Ollama
-1. Open **Settings** → **Apps** → **Installed Apps**
-2. Search for **Ollama** and click **Uninstall**
-
-### Remove Downloaded Models
-Models are stored by Ollama. To remove them before uninstalling:
-```bash
-ollama rm aryanvala/hushiyar-alpha
-ollama rm llama3.1
-```
-
-Or delete the entire model storage folder:
-```
-%USERPROFILE%\.ollama\models
-```
 
 ---
 
