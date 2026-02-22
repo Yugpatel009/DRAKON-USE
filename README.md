@@ -87,7 +87,7 @@ After installation, Ollama runs silently in the background. Look for the **llama
 
 ## 4 — Download Your First AI Model
 
-DRAKON is optimized for a custom model called **Hushiyar-Alpha**, built specifically for high-quality code generation and reasoning.
+DRAKON is optimized for a custom model called **Hushiyar-Alpha**, created by [Aryan Vala](https://github.com/devbyaryanvala) and built specifically for high-quality code generation and reasoning.
 
 ### Step 1: Open Terminal
 Press `Win + R`, type `cmd`, and press **Enter** (or search for **PowerShell** in the Start Menu).
@@ -267,6 +267,7 @@ Then refresh the DRAKON page and re-select the model.
 ---
 
 <p align="center">
-  <strong>Built with ❤️ by the Yug kansagara</strong><br/>
+  <strong>Built with ❤️ by Yug Kansagara</strong><br/>
+  <em>Hushiyar-Alpha model by <a href="https://github.com/devbyaryanvala">Aryan Vala</a></em><br/>
   <em>Privacy First. Always Local. Always Yours.</em>
 </p>
