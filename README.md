@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="drakon.png" alt="DRAKON Logo" width="80"/>
+  <img src="static/img/logo.png" alt="DRAKON Logo" width="80"/>
 </p>
 
 <h1 align="center">DRAKON AI — User Manual</h1>
@@ -20,7 +20,7 @@
 | 7 | [Managing Models](#7--managing-models) |
 | 8 | [Keyboard Shortcuts](#8--keyboard-shortcuts) |
 | 9 | [Troubleshooting](#9--troubleshooting) |
-| 10 | [Uninstallation](#10--uninstallation) |
+
 
 ---
 
@@ -139,22 +139,9 @@ You can also download other open-source models. Some popular choices:
 
 When you launch DRAKON, you'll see the main chat interface:
 
-```
-┌─────────────────────────────────────────────────┐
-│  ☰ Sidebar    │         DRAKON AI               │
-│               │                                  │
-│  Chat History │    Welcome! How can I help you   │
-│  ─────────    │    with coding today?             │
-│  > Chat 1     │                                  │
-│  > Chat 2     │                                  │
-│  > Chat 3     │                                  │
-│               │                                  │
-│               │  ┌──────────────────────────┐    │
-│               │  │ + │ Type your message... │ ➤ │ │
-│               │  └──────────────────────────┘    │
-│               │         Model: Hushiyar-Alpha    │
-└─────────────────────────────────────────────────┘
-```
+<p align="center">
+  <img src="static/img/learn_preview1.png" alt="DRAKON Chat Interface" width="600"/>
+</p>
 
 | Element | Description |
 |---------|-------------|
@@ -277,8 +264,6 @@ Then refresh the DRAKON page and re-select the model.
 **Fix:**
 1. When prompted, click **Allow access** for both private and public networks.
 2. If you accidentally denied it, go to **Windows Security** → **Firewall** → **Allow an app through firewall** → find and enable `DRAKON.exe`.
-
-
 ---
 
 <p align="center">
