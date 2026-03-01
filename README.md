@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" alt="DRAKON Logo" width="80"/>
+  <img src="drakon.png" alt="DRAKON Logo" width="80"/>
 </p>
 
 <h1 align="center">DRAKON AI — User Manual</h1>
@@ -140,7 +140,7 @@ You can also download other open-source models. Some popular choices:
 When you launch DRAKON, you'll see the main chat interface:
 
 <p align="center">
-  <img src="static/img/learn_preview1.png" alt="DRAKON Chat Interface" width="1000"/>
+  <img src="learn_preview1.png" alt="DRAKON Chat Interface" width="1000"/>
 </p>
 
 | Element | Description |
