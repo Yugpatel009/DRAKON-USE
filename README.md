@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="drakon.png" alt="DRAKON Logo" width="80"/>
+  <img src=drakon.png" alt="DRAKON Logo" width="80"/>
 </p>
 
 <h1 align="center">DRAKON AI — User Manual</h1>
@@ -12,14 +12,15 @@
 | # | Section |
 |---|---------|
 | 1 | [System Requirements](#1--system-requirements) |
-| 2 | [Download & Launch the App](#2--download--launch-the-app) |
-| 3 | [Install the Ollama Engine](#3--install-the-ollama-engine) |
-| 4 | [Download Your First AI Model](#4--download-your-first-ai-model) |
-| 5 | [App Interface Overview](#5--app-interface-overview) |
-| 6 | [Core Features](#6--core-features) |
-| 7 | [Managing Models](#7--managing-models) |
-| 8 | [Keyboard Shortcuts](#8--keyboard-shortcuts) |
-| 9 | [Troubleshooting](#9--troubleshooting) |
+| 2 | [Hosted Version (Web)](#2--hosted-version-web) |
+| 3 | [Download & Launch the App](#3--download--launch-the-app) |
+| 4 | [Install the Ollama Engine](#4--install-the-ollama-engine) |
+| 5 | [Download Your First AI Model](#5--download-your-first-ai-model) |
+| 6 | [App Interface Overview](#6--app-interface-overview) |
+| 7 | [Core Features](#7--core-features) |
+| 8 | [Managing Models](#8--managing-models) |
+| 9 | [Keyboard Shortcuts](#9--keyboard-shortcuts) |
+| 10 | [Troubleshooting](#10--troubleshooting) |
 
 
 ---
@@ -39,7 +40,17 @@
 
 ---
 
-## 2 — Download & Launch the App
+## 2 — Hosted Version (Web)
+
+DRAKON is also available as a **hosted web application** — no download required! You can access the full interface directly in your browser.
+
+🌐 **Live App:** [https://demodrago40-cell.github.io/DRAKON-Prompt/](https://demodrago40-cell.github.io/DRAKON-Prompt/)
+
+> **Note:** The hosted version connects to cloud-based models. For full offline and local model support, use the desktop app (see sections below).
+
+---
+
+## 3 — Download & Launch the App
 
 ### Step 1: Get the Installer
 Download `DRAKON.exe` from the official DRAKON download page or from the link provided by the team.
@@ -62,7 +73,7 @@ Once launched, DRAKON will open a browser window at `http://127.0.0.1:5000` with
 
 ---
 
-## 3 — Install the Ollama Engine
+## 4 — Install the Ollama Engine
 
 DRAKON uses **Ollama** as its local inference engine — this is the "brain" that actually runs the AI models on your hardware.
 
@@ -85,7 +96,7 @@ After installation, Ollama runs silently in the background. Look for the **llama
 
 ---
 
-## 4 — Download Your First AI Model
+## 5 — Download Your First AI Model
 
 DRAKON is optimized for a custom model called **Hushiyar-Alpha**, created by [Aryan Vala](https://github.com/devbyaryanvala) and built specifically for high-quality code generation and reasoning.
 
@@ -135,12 +146,12 @@ You can also download other open-source models. Some popular choices:
 
 ---
 
-## 5 — App Interface Overview
+## 6 — App Interface Overview
 
 When you launch DRAKON, you'll see the main chat interface:
 
 <p align="center">
-  <img src="learn_preview.png" alt="DRAKON Chat Interface" width="1000"/>
+  <img src="static/img/learn_preview.png" alt="DRAKON Chat Interface" width="1000"/>
 </p>
 
 | Element | Description |
@@ -154,7 +165,7 @@ When you launch DRAKON, you'll see the main chat interface:
 
 ---
 
-## 6 — Core Features
+## 7 — Core Features
 
 ### 💬 Chat & Code Generation
 Type any coding question or request in natural language. DRAKON will respond with structured, well-commented code.
@@ -189,7 +200,7 @@ Activate via the **+** menu. Generate images from text prompts using a local Com
 
 ---
 
-## 7 — Managing Models
+## 8 — Managing Models
 
 ### View Installed Models
 Open your terminal and run:
@@ -219,7 +230,7 @@ ollama rm aryanvala/hushiyar-alpha
 
 ---
 
-## 8 — Keyboard Shortcuts
+## 9 — Keyboard Shortcuts
 
 | Shortcut | Action |
 |----------|--------|
@@ -229,7 +240,7 @@ ollama rm aryanvala/hushiyar-alpha
 
 ---
 
-## 9 — Troubleshooting
+## 10 — Troubleshooting
 
 ### "Ollama Not Running" in Model Selector
 **Cause:** The Ollama engine is not active.  
