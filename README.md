@@ -44,7 +44,7 @@
 
 DRAKON is also available as a **hosted web application** — no download required! You can access the full interface directly in your browser.
 
-🌐 **Live App:** [https://demodrago40-cell.github.io/DRAKON-Prompt/](https://demodrago40-cell.github.io/DRAKON-Prompt/)
+🌐 **Live App:** 
 
 > **Note:** The hosted version connects to cloud-based models. For full offline and local model support, use the desktop app (see sections below).
 
