@@ -45,7 +45,7 @@
 DRAKON is also available as a **hosted web application** — no download required! You can access the full interface directly in your browser.
 
 🌐 **Live App:** 
-
+  https://drakon-mu.vercel.app/
 > **Note:** The hosted version connects to cloud-based models. For full offline and local model support, use the desktop app (see sections below).
 
 ---
