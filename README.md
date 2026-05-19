@@ -2,7 +2,7 @@
   <img src="drakon.png" alt="DRAKON Logo" width="80"/>
 </p>
 
-<h1 align="center">DRAKON AI — User Manual</h1>
+<h1 align="center">DRAKON AI — User Manual </h1>
 <p align="center"><em>Your Private, Offline-First AI Coding Assistant</em></p>
 
 ---
