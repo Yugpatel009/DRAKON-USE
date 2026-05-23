@@ -151,7 +151,7 @@ You can also download other open-source models. Some popular choices:
 When you launch DRAKON, you'll see the main chat interface:
 
 <p align="center">
-  <img src="learn_preview.png" alt="DRAKON Chat Interface" width="1000"/>
+  <img src="app_preview.png" alt="DRAKON Chat Interface" width="1000"/>
 </p>
 
 | Element | Description |
